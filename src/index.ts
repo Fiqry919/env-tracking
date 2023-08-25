@@ -1,6 +1,6 @@
+import dotenv from "dotenv"
 import { resolve } from "path";
 import { readFile, writeFileSync } from "fs"
-import dotenv from "dotenv"
 
 export const env = dotenv.config()
 

@@ -1,5 +1,5 @@
 {
-  "name": "track_env",
+  "name": "env-tracking",
   "version": "1.0.0",
   "description": "read, create or update environment variables from .env file",
   "main": "./dist/index.js",
@@ -16,7 +16,6 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "track_env": "^1.0.0"
+    "dotenv": "^16.3.1"
   }
 }
