@@ -31,7 +31,7 @@ const key = env.get("SECRET_KEY");
 console.log(key);
 ```
 
-[Set] Set value to .env file, you can add many in one execution
+[Set] Set value to .env file, and you can make more than one
 
 ```javascript
 env.set(
