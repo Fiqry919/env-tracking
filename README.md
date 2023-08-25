@@ -1,6 +1,6 @@
 ## Installation
 
-[npm](https://www.npmjs.com/):
+[NPM](https://www.npmjs.com/):
 
 ```bash
 npm install env-tracking
@@ -23,7 +23,7 @@ import { Environment as env } from "env-tracking";
 
 ## Example
 
-[Get] Getting value from .env file
+[`Get`] Getting value from .env file
 
 ```javascript
 const key = env.get("SECRET_KEY");
@@ -31,7 +31,7 @@ const key = env.get("SECRET_KEY");
 console.log(key);
 ```
 
-[Set] Set value to .env file, and you can make more than one
+[`Set`] Set value to .env file, and you can make more than one
 
 ```javascript
 env.set(
@@ -45,5 +45,5 @@ env.set(
 
 ## Quote
 
-Special Thanks to [`motdotla`](https://github.com/motdotla)
+Special Thanks to [`motdotla`](https://github.com/motdotla),
 At first I made this just to meet my needs, but I thought again if this can help make it easier for someone why not
