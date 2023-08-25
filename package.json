@@ -1,6 +1,6 @@
 {
   "name": "env-tracking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "read, create or update environment variables from .env file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
