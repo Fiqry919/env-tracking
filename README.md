@@ -42,3 +42,8 @@ env.set(
   "./../.env" // path of .env file include filename
 );
 ```
+
+## Quote
+
+Special Thanks to [`motdotla`](https://github.com/motdotla)
+At first I made this just to meet my needs, but I thought again if this can help make it easier for someone why not
