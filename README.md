@@ -18,7 +18,7 @@ SECRET_HASH="YOURSECRETHASHGOESHERE"
 then import and use it in your application
 
 ```javascript
-import { Environment as env } 'env-tracking'
+import { Environment as env } from "env-tracking";
 ```
 
 ## Example
