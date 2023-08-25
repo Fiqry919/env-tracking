@@ -1,0 +1,22 @@
+{
+  "name": "track_env",
+  "version": "1.0.0",
+  "description": "read, create or update environment variables from .env file",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node -e \"import { Environment, env } from './dist'; console.log(Environment.get('APP_NAME'))\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "track_env": "^1.0.0"
+  }
+}
