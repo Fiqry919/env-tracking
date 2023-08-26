@@ -1,5 +1,5 @@
 {
-  "name": "env-file",
+  "name": "env-tracking",
   "version": "1.0.4",
   "description": "load, create or update environment variables from .env file",
   "main": "./dist/index.js",
