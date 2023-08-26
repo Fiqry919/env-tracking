@@ -1,15 +1,20 @@
 {
-  "name": "env-tracking",
+  "name": "env-file",
   "version": "1.0.3",
-  "description": "read, create or update environment variables from .env file",
+  "description": "load, create or update environment variables from .env file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "ts-node -e \"import { Environment, env } from './dist'; console.log(Environment.get('APP_NAME'))\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "env",
+    "environment",
+    ".env",
+    "file"
+  ],
+  "author": "trackingx",
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.1",
