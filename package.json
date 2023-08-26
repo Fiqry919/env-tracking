@@ -1,6 +1,6 @@
 {
   "name": "env-file",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "load, create or update environment variables from .env file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
