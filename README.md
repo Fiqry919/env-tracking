@@ -18,12 +18,18 @@ SECRET_HASH="YOURSECRETHASHGOESHERE"
 then import and use it in your application
 
 ```javascript
+const env = require("env-tracking").Environment;
+```
+
+with ES module
+
+```javascript
 import { Environment as env } from "env-tracking";
 ```
 
 ## Example
 
-[`Get`] Getting value from .env file
+- `Get` Getting value from .env file
 
 ```javascript
 const key = env.get("SECRET_KEY");
@@ -31,7 +37,7 @@ const key = env.get("SECRET_KEY");
 console.log(key);
 ```
 
-[`Set`] Set value to .env file, and you can make more than one
+- `Set` Set value to .env file, and you can make more than one
 
 ```javascript
 env.set(
@@ -43,7 +49,6 @@ env.set(
 );
 ```
 
-## Quote
+### Quote
 
-Special Thanks to [`motdotla`](https://github.com/motdotla),
-At first I made this just to meet my needs, but I thought again if this can help make it easier for someone why not
+Special Thanks to [`motdotla`](https://github.com/motdotla), by using [`dotenv`](https://www.npmjs.com/package/dotenv) i made this.

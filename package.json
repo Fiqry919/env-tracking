@@ -9,8 +9,8 @@
     "test": "ts-node -e \"import { Environment, env } from './dist'; console.log(Environment.get('APP_NAME'))\""
   },
   "keywords": [
-    "env",
     "environment",
+    "env",
     ".env",
     "file"
   ],

@@ -19,7 +19,7 @@ export class Environment {
      * @param x string .env file
      * @returns Decode .env file
      */
-    static decode(x: string): Decode {
+    private static decode(x: string): Decode {
         const r: Decode = {}
         const ls = x.toString().split('\n')
 
@@ -38,18 +38,11 @@ export class Environment {
     }
 
     /**
-     * Decode .env file to object
-     * @param x string .env file
-     * @returns Decode .env file
-     */
-    decode(x: string): Decode { return this.instance.decode(x) }
-
-    /**
      * Encode from object to .env file
      * @param x object from decode .env file
      * @returns .env
      */
-    static encode(x: Decode): string {
+    private static encode(x: Decode): string {
         let s = ""
         for (const [k, v] of Object.entries(x)) {
             if (k) {
@@ -59,13 +52,6 @@ export class Environment {
         }
         return s
     }
-
-    /**
-     * Encode from object to .env file
-     * @param x object from decode .env file
-     * @returns .env
-     */
-    encdoe(x: Decode): string { return this.instance.encode(x) }
 
     /**
      * Get value from .env file
