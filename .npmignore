@@ -1,5 +1,6 @@
 /node_modules
 /src
+/src/test
 *.env
 .env.example
 tsconfig.json

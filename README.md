@@ -21,7 +21,7 @@ then import and use it in your application
 const env = require("env-tracking").Environment;
 ```
 
-with ES module
+or with ES module
 
 ```javascript
 import { Environment as env } from "env-tracking";

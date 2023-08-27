@@ -6,7 +6,10 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "ts-node -e \"import { Environment, env } from './dist'; console.log(Environment.get('APP_NAME'))\""
+    "release:patch": "npm run build && npm version patch",
+    "release:minor": "npm run build && npm version minor",
+    "release:major": "npm run build && npm version major",
+    "test": "node ./dist/test/index.js"
   },
   "keywords": [
     "environment",
