@@ -6,9 +6,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "release:patch": "npm run build && npm version patch",
-    "release:minor": "npm run build && npm version minor",
-    "release:major": "npm run build && npm version major",
+    "release:patch": "npm run build && git add . && git commit && npm version patch && npm publish",
+    "release:minor": "npm run build && git add . && git commit && npm version minor && npm publish",
+    "release:major": "npm run build && git add . && git commit && npm version major && npm publish",
     "test": "node ./dist/test/index.js"
   },
   "keywords": [
