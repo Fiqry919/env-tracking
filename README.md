@@ -18,13 +18,13 @@ SECRET_HASH="YOURSECRETHASHGOESHERE"
 then import and use it in your application
 
 ```javascript
-const env = require("env-tracking").Environment;
+const env = require("env-tracking");
 ```
 
 or with ES module
 
 ```javascript
-import { Environment as env } from "env-tracking";
+import env from "env-tracking";
 ```
 
 ## Example
@@ -34,7 +34,7 @@ import { Environment as env } from "env-tracking";
 ```javascript
 const key = env.get("SECRET_KEY");
 
-console.log(key);
+console.log(key); // YOURSECRETKEYGOESHERE
 ```
 
 - `Set` Set value to .env file, and you can make more than one

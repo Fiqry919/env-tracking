@@ -2,17 +2,17 @@ import dotenv from "dotenv"
 import { resolve } from "path";
 import { readFile, writeFileSync } from "fs"
 
-export const env = dotenv.config()
+const env = dotenv.config()
 
 declare type Decode = Record<string, any>
 
 declare interface Encode { key: string, value: any }
 
-export class Environment {
+export default class Environment {
 
     private instance: typeof Environment = this.constructor as typeof Environment
 
-    constructor() { }
+    protected constructor() { }
 
     /**
      * Decode .env file to object

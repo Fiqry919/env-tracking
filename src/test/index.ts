@@ -1,4 +1,4 @@
-import { Environment as env } from "..";
+import env from "..";
 
 console.log(env.get("SECRET_KEY"));
 

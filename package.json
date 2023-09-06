@@ -1,6 +1,6 @@
 {
   "name": "env-tracking",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "load, create or update environment variables from .env file",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -17,8 +17,15 @@
     ".env",
     "file"
   ],
-  "author": "trackingx",
+  "author": "@tracking",
   "license": "ISC",
+  "publishConfig": {
+    "registry": "@env-tracking:https://npm.pkg.github.com/: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"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Fiqry919/env-tracking.git"
+  },
   "devDependencies": {
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
