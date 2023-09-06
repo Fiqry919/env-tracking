@@ -3,12 +3,12 @@
   "version": "1.0.9",
   "description": "load, create or update environment variables from .env file",
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/bin/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "release:patch": "npm run build && git add . && git commit && npm version patch && npm publish",
-    "release:minor": "npm run build && git add . && git commit && npm version minor && npm publish",
-    "release:major": "npm run build && git add . && git commit && npm version major && npm publish",
+    "release:patch": "npm run build && git add . && git commit && npm version patch",
+    "release:minor": "npm run build && git add . && git commit && npm version minor",
+    "release:major": "npm run build && git add . && git commit && npm version major",
     "test": "node ./dist/test/index.js"
   },
   "keywords": [
