@@ -10,18 +10,18 @@ npm install env-tracking
 
 Create a `.env` file in the root of your project:
 
-```dosini
-SECRET_KEY="YOURSECRETKEYGOESHERE"
-SECRET_HASH="YOURSECRETHASHGOESHERE"
+```
+SECRET_KEY="YOUR_SECRET_KEY"
+SECRET_HASH="YOUR_SECRET_HASH"
 ```
 
-then import and use it in your application
-
+then import and use it in your application.<br/><br/>
+CommonJS
 ```javascript
-const env = require("env-tracking");
+const env = require("env-tracking").default;
 ```
 
-or with ES module
+ES module
 
 ```javascript
 import env from "env-tracking";
@@ -34,7 +34,7 @@ import env from "env-tracking";
 ```javascript
 const key = env.get("SECRET_KEY");
 
-console.log(key); // YOURSECRETKEYGOESHERE
+console.log(key); // YOUR_SECRET_KEY
 ```
 
 - `Set` Set value to .env file, and you can make more than one
@@ -42,13 +42,12 @@ console.log(key); // YOURSECRETKEYGOESHERE
 ```javascript
 env.set(
   [
-    { key: "SECRET_KEY", value: "YOURSECRETKEYGOESHERE" },
-    { key: "SECRET_HASH", value: "YOURSECRETHASHGOESHERE" }
-  ],
-  "./../.env" // path of .env file include filename
+    { key: "SECRET_KEY", value: "YOUR_SECRET_KEY" },
+    { key: "SECRET_HASH", value: "YOUR_SECRET_HASH" }
+  ], "./../.env" // path of .env file include filename
 );
 ```
 
-### Quote
+##
+[![Downloads](https://badgen.net/npm/dt/env-tracking)](https://www.npmjs.com/package/env-tracking)
 
-Special Thanks to [`motdotla`](https://github.com/motdotla), by using [`dotenv`](https://www.npmjs.com/package/dotenv) i made this.

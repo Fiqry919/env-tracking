@@ -1,9 +1,9 @@
 {
   "name": "env-tracking",
   "version": "1.1.0",
-  "description": "load, create or update environment variables from .env file",
+  "description": "Load, create or update environment variables from .env file",
   "main": "./dist/index.js",
-  "types": "./dist/bin/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "release:patch": "npm run build && git add . && git commit && npm version patch",
