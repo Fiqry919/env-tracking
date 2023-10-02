@@ -1,6 +1,10 @@
-## Installation
+###
+[![NPM Version](https://img.shields.io/npm/v/env-tracking.svg)](https://www.npmjs.org/package/env-tracking)
+[![license](https://img.shields.io/npm/l/env-tracking)](https://www.npmjs.org/package/env-tracking)
+[![Downloads](https://badgen.net/npm/dt/env-tracking)](https://www.npmjs.com/package/env-tracking)
+[![Install Size](https://packagephobia.now.sh/badge?p=env-tracking)](https://packagephobia.now.sh/result?p=env-tracking)
 
-[NPM](https://www.npmjs.com/):
+## Installation
 
 ```bash
 npm install env-tracking
@@ -47,7 +51,3 @@ env.set(
   ], "./../.env" // path of .env file include filename
 );
 ```
-
-##
-[![Downloads](https://badgen.net/npm/dt/env-tracking)](https://www.npmjs.com/package/env-tracking)
-

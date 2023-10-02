@@ -2,6 +2,7 @@
   "name": "env-tracking",
   "version": "1.1.1",
   "description": "Load, create or update environment variables from .env file",
+  "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -11,14 +12,15 @@
     "release:major": "npm run build && git add . && git commit && npm version major",
     "test": "node ./dist/test/index.js"
   },
+  "engines": {
+    "node": ">=16.18"
+  },
   "keywords": [
     "environment",
     "env",
     ".env",
     "file"
   ],
-  "author": "@tracking",
-  "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
